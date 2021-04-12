@@ -1,0 +1,19 @@
+debug:
+  DEBUG: True
+
+env:
+  ENV: development
+
+els_env:
+  ENV: devrevamp
+
+microservice:
+  host: 127.0.0.1
+  port: 8000
+  threaded: False
+
+installed_apps:
+  - producer.first_app
+
+secrets:
+  SECRET_KEY: y$hn=m&mv-_#%8&vlx(@+-!p+ta#%-7pt2^#9+q+r^!e0449tc
