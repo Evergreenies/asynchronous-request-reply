@@ -18,8 +18,8 @@ pattern.
   asynchronous operation creates a new resource, the status endpoint would redirect to the URL for that resource.
   <br><br>
   Here, we have two flask application - <br>
-    1. Consumer (flask_consumer)
-    2. Producer (flask_producer)
+    1. Consumer ([flask_consumer](https://github.com/Evergreenies/asynchronous-request-reply/tree/main/flask_consumer))
+    2. Producer ([flask_producer](https://github.com/Evergreenies/asynchronous-request-reply/tree/main/flask_producer))
 
 #### [HTTP Pooling](https://docs.microsoft.com/en-us/azure/architecture/patterns/async-request-reply#solution) <br>
 
@@ -58,6 +58,6 @@ curl --location --request POST 'http://127.0.0.1:8001/call-me' \
 
 #### Note:
 
-1. Custom Python Logger.
-2. Periodic Executor using Python.
-3. Queue-Based Load Management using Python.
+1. Custom Python Logger. ([Here](https://github.com/Evergreenies/asynchronous-request-reply/tree/main/flask_producer/producer/custom_logger))
+2. Periodic Executor using Python. ([Here](https://github.com/Evergreenies/asynchronous-request-reply/blob/main/flask_consumer/_periodic_caller.py))
+3. Queue-Based Load Management using Python. ([Here](https://github.com/Evergreenies/asynchronous-request-reply/tree/main/flask_producer/producer/queuing_mgmt))
