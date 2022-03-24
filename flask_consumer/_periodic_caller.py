@@ -14,6 +14,7 @@ def set_interval(interval: int) -> Callable:
     """
 
     def wrapper(func):
+        """Wrapper function for periodic caller"""
         def wrapped(*args, **kwargs):
             stopped = threading.Event()
 
