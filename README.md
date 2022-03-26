@@ -2,7 +2,7 @@
 
 ### Flask based application to demonstrate Asynchronous Request-Reply pattern mentioned in Microsoft Docs.
 
-[Click here](https://docs.microsoft.com/en-us/azure/architecture/patterns/async-request-reply) tp read more about this
+[Click here](https://docs.microsoft.com/en-us/azure/architecture/patterns/async-request-reply) to read more about this
 pattern.
 
 #### Description - <br>
