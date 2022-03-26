@@ -6,6 +6,7 @@ from typing import Callable
 def set_interval(interval: int) -> Callable:
     """
     Periodic execution
+
     :param interval: In seconds
     :type interval: int
     :return:
@@ -13,8 +14,7 @@ def set_interval(interval: int) -> Callable:
     """
 
     def wrapper(func):
-        """Wrapper function for periodic caller"""
-
+        """Wrapper to periodic functions"""
         def wrapped(*args, **kwargs):
             stopped = threading.Event()
 
@@ -28,3 +28,4 @@ def set_interval(interval: int) -> Callable:
         return wrapped
 
     return wrapper
+
